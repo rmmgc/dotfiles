@@ -1,0 +1,17 @@
+catppuccin.catppuccin-vsc
+catppuccin.catppuccin-vsc-icons
+christian-kohler.npm-intellisense
+dbaeumer.vscode-eslint
+dnicolson.binary-plist
+eamodio.gitlens
+esbenp.prettier-vscode
+mathiasfrohlich.kotlin
+mikestead.dotenv
+ms-vscode.cpptools
+rangav.vscode-thunder-client
+redhat.vscode-xml
+shd101wyy.markdown-preview-enhanced
+streetsidesoftware.code-spell-checker
+unifiedjs.vscode-mdx
+usernamehw.errorlens
+vscjava.vscode-gradle

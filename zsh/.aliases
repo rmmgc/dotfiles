@@ -1,0 +1,54 @@
+#!/usr/bin/env zsh
+
+
+# ---
+# Zsh shell
+# Commonly used aliases.
+# ---
+
+
+# Easier navigation: .., ..., ...., ....., ~ and -
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+alias ~="cd ~"
+alias -- -="cd -"
+
+# Get week number
+alias week='date +%V'
+
+# IP addresses
+alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
+alias localip="ipconfig getifaddr en0"
+
+# Run with sudo
+alias _='sudo '
+
+# Colorise `diff` by default
+alias diff='diff --color'
+
+# Always enable colored `grep` output and exclude files/dirs
+alias grep='grep --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn,.idea,.tox}'
+
+# List commands
+alias l='ls -lah'
+alias la='ls -lAh'
+alias ll='ls -lh'
+alias ls='ls -G'
+alias lsa='ls -lah'
+
+# Create directory with directory hierarchy
+alias md='mkdir -p'
+
+# Remove directory
+alias rd=rmdir
+
+# Print each PATH entry on a separate line
+alias path='echo -e ${PATH//:/\\n}'
+
+# Locally delete merged git branches
+alias gbda='git branch --no-color --merged | command grep -vE "^(\+|\*|\s*(master|main|dev)\s*$)" | command xargs -n 1 git branch -d'
+
+# Quick copy pub ssh key
+alias copyssh="pbcopy < $HOME/.ssh/id_ed25519.pub"
