@@ -51,4 +51,4 @@ alias path='echo -e ${PATH//:/\\n}'
 alias gbda='git branch --no-color --merged | command grep -vE "^(\+|\*|\s*(master|main|dev)\s*$)" | command xargs -n 1 git branch -d'
 
 # Quick copy pub ssh key
-alias copyssh="pbcopy < $HOME/.ssh/id_ed25519.pub"
+alias cpssh="pbcopy < $HOME/.ssh/id_rsa.pub"
